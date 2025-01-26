@@ -28,9 +28,12 @@ public class LionTest {
         Lion lionMale = new Lion("Самец", feline);
         assertEquals(true, lionMale.doesHaveMane());
 
-        Lion lionFemale = new Lion("Самка", feline);
-        assertEquals(false, lionFemale.doesHaveMane());
     }
+        @Test
+        public void testDoesHaveManeForFemaleLion() throws Exception {
+            Lion lionFemale = new Lion("Самка", feline);
+            assertEquals(false, lionFemale.doesHaveMane());
+        }
 
     @Test
     public void testGetFood() throws Exception {
